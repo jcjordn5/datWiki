@@ -8,7 +8,7 @@ var express 	= require('express'),
   session = require('express-session'),
   methodOverride = require('method-override'),
   morgan = require('morgan'),
-  server.set('views', "./views");
+  server.set('views', './views');
 	server.set('view engine', 'ejs');
 	server.use(express.static("./public"));
 	server.use(bodyParser.urlencoded({
@@ -24,19 +24,19 @@ server.use(morgan('short'));
 server.use(expressLayouts);
 
 //ROUTES
-//var userController = require('./controllers/users.js');
-//var postController = require('./controllers/posts.js');
-//server.use('/user', userController);
-//server.use('/post', postController);
+var userController = require('./controllers/users.js');
+var postController = require('./controllers/posts.js');
+server.use('/users', userController);
+server.use('/posts', postController);
 server.get('/', function (req, res){
   res.render('welcome')
 })
 
 //CATCHALL ROUTES
 
-server.use(function (req,res) {
+/*server.use(function (req,res) {
   res.send("Welcome to the 404")
-});
+});*/
 
 mongoose.connect(url);
 var db = mongoose.connection;
