@@ -24,10 +24,10 @@ server.use(morgan('short'));
 server.use(expressLayouts);
 
 //ROUTES
-var userController = require('./controllers/users.js');
-var postController = require('./controllers/posts.js');
-server.use('/user', userController);
-server.use('/post', postController);
+//var userController = require('./controllers/users.js');
+//var postController = require('./controllers/posts.js');
+//server.use('/user', userController);
+//server.use('/post', postController);
 server.get('/', function (req, res){
   res.render('welcome')
 })
