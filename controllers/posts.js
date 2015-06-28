@@ -32,7 +32,7 @@ newPost.save(function (err, result){
   }
   else {
   console.log(result);
-  res.redirect(301, "/");
+  res.redirect(301, "/posts");
 }
 });
 });
@@ -53,7 +53,7 @@ router.delete('/:id', function (req, res){
   var postId = req.params.id;
   Post.findByIdAndRemove(postId, function (err, result){
     console.log(result);
-    res.redirect(301, "/");
+    res.redirect(301, "/posts");
   });
 });
 
@@ -61,7 +61,7 @@ router.delete('/:id', function (req, res){
 router.get('/:id/edit', function (req,res){
   var postId = req.params.id;
   Post.findById(postId, function (err, result){
-    res.render('posts/edit', {posts:result});
+    res.render('posts/edit', {post:result});
     console.log(result);
   });
 });
@@ -70,13 +70,14 @@ router.post('/:id/update', function (req, res) {
   var postId = req.params.id;
   var postToUpdate = req.body.post;
   console.log("Edit Atrticle", postToUpdate);
-  Item.update({_id: postId}, {
+  Post.update({_id: postId}, {
     title: postToUpdate.title,
     body: postToUpdate.body,
-    categories: postToUpdate.categories},
+    categories: postToUpdate.categories,
+    updatedAt:Date.now()},
     {multi: false}, function (err, result) {
       console.log(result);
-      res.redirect(301, "posts");
+      res.redirect(301, "/posts");
   });
 });
 

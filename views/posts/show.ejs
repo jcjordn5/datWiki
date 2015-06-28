@@ -5,7 +5,11 @@
   <% post.categories.forEach(function(item, i) { %>
   <p><%= post.categories %></p>
   <% }); %>
-  <p><%= post.time %></p>
+  <h3>Last Updated</h3>
+  <p><%= post.updatedAt %></p>
+  <h3>Created</h3>
+  <p><%= post.createdAt %></p>
+
   <form action="/posts/<%= post._id %>?_method=DELETE" method="post">
    <input class="button" type="submit" value="Delete item">
  </form>

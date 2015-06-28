@@ -1,0 +1,12 @@
+
+<form id="article-form" action="/posts/<%=post._id%>/update" method="post">
+  <fieldset>
+    <label for= "post-title">Title</label>
+    <input type="text" id="post-title" name="post[title]" value="<%=post.title%>">
+    <label for="item-description">Description</label>
+    <input type="textarea" id="post-body" name="post[body]" value="<%=post.body%>">
+    <label for= "post-categories">Categories</label>
+    <input type="text" id="post-categories" name="post[categories]" value="<%=post.categories%>">
+    <input type="submit" value="Publish">
+  </fieldset>
+</form>
