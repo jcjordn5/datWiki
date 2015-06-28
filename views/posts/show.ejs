@@ -1,0 +1,14 @@
+<div>
+<h1><%= post.title %></h1>
+   <p><%= post.body %></p>
+  <h2>Categories</h2>
+  <% post.categories.forEach(function(item, i) { %>
+  <p><%= post.categories %></p>
+  <% }); %>
+  <p><%= post.time %></p>
+  <form action="/posts/<%= post._id %>?_method=DELETE" method="post">
+   <input class="button" type="submit" value="Delete item">
+ </form>
+ <a class="button nav" href="/posts/<%= post.id %>/edit">Edit</a>
+  <a class="button nav" href="/posts">BACK</a>
+</div>

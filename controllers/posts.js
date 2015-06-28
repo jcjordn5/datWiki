@@ -13,7 +13,7 @@ router.get('/', function(req, res){
       console.log(err);
     }
     else {
-      res.render('posts/index',{posts: postsArray});
+      res.render('posts/index',{post: postsArray});
     }
   });
 });
@@ -32,7 +32,7 @@ newPost.save(function (err, result){
   }
   else {
   console.log(result);
-  res.redirect(301, "posts");
+  res.redirect(301, "/");
 }
 });
 });
@@ -40,7 +40,7 @@ newPost.save(function (err, result){
 router.get('/:id', function (req, res) {
  var postId = req.params.id;
  console.log(req.params.id);
- Post.findById({_id: postId}, function (err, item) {
+ Post.findById({_id: postId}, function (err, post) {
    if (err) {
      console.log("Error in /posts/" + postId);
    } else {
@@ -51,17 +51,17 @@ router.get('/:id', function (req, res) {
 //DELETE
 router.delete('/:id', function (req, res){
   var postId = req.params.id;
-  Item.findByIdAndRemove(postId, function (err, result){
+  Post.findByIdAndRemove(postId, function (err, result){
     console.log(result);
-    res.redirect(301, "posts");
+    res.redirect(301, "/");
   });
 });
 
 //EDIT
 router.get('/:id/edit', function (req,res){
   var postId = req.params.id;
-  Post.findById(itemId, function (err, result){
-    res.render('posts/edit', {post:result});
+  Post.findById(postId, function (err, result){
+    res.render('posts/edit', {posts:result});
     console.log(result);
   });
 });
