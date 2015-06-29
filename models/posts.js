@@ -5,7 +5,8 @@ Schema = mongoose.Schema;
 var postSchema = Schema({
   title:{type:String, require:true},
   body:{type:String, require:true},
-  categories:[{type:String}],
+  author:String,
+  category:String,
   //author:String,
 
 });

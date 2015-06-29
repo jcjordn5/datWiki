@@ -3,6 +3,7 @@ var express = require('express');
 var router = express.Router();
 var bodyParser 	= require('body-parser');
 var User = require('../models/users.js');
+var Post = require('../models/posts.js').author;
 var methodOverride = require('method-override');
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(methodOverride("_method"));
@@ -29,6 +30,12 @@ router.get('/login', function(req, res){
   res.render('users/login');
 });
 
+router.get('/posts', function (req, res, next){
+	res.render('posts', {
+		sessionName: " " + req.session.userName
+	});
+});
+
 router.post('/login', function (req, res){
   var loginAtt = req.body.user;
 
@@ -37,11 +44,15 @@ router.post('/login', function (req, res){
 
       req.session.currentUser = user.name;
       console.log('welcome' + req.session.currentUser);
-      res.redirect(301, '../posts');
-    }
-    else
+      res.render('welcome', {
+        sessionName:req.session.currentUser,
+        post:require('../models/posts.js')
+      });
+      }
+    else{
     res.redirect(301, '/users/login');
-  })
-})
+  }
+});
+});
 
 module.exports = router;

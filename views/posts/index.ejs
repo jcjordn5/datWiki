@@ -1,7 +1,30 @@
+
   <div id="post">
-  <h2>INDEX OF ARTICLES BY CATEGORY</h2>
-    <% post.forEach(function(post, i) { %>
-    <a href="/posts/<%=post._id%>"><%= post.title %></a>
-    <% }); %>
+  <h1>INDEX OF ARTICLES BY CATEGORY</h1>
+  <h3>DATA</h3>
+<%post.forEach(function(post, j) { %>
+<%if (post.category === "data"){%>
+<a href="/posts/<%=post._id%>"><%= post.title %></a>
+<% }}); %>
+<h3>INFORMATION</h3>
+<%post.forEach(function(post, j) { %>
+<%if (post.category === "information"){%>
+<a href="/posts/<%=post._id%>"><%= post.title %></a>
+<% }}); %>
+<h3>FACTS</h3>
+<%post.forEach(function(post, j) { %>
+<%if (post.category === "facts"){%>
+<a href="/posts/<%=post._id%>"><%= post.title %></a>
+<% }}); %>
+<h3>KNOWLEDGE</h3>
+<%post.forEach(function(post, j) { %>
+<%if (post.category === "knowledge"){%>
+<a href="/posts/<%=post._id%>"><%= post.title %></a>
+<% }}); %>
+<h3>WISDOM</h3>
+<%post.forEach(function(post, j) { %>
+<%if (post.category === "wisdom"){%>
+<a href="/posts/<%=post._id%>"><%= post.title %></a>
+<% }}); %>
     <a href="/posts/new">Create New Article</a>
   </div>

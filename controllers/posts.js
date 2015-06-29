@@ -3,6 +3,7 @@ var express = require('express');
 var router = express.Router();
 var bodyParser 	= require('body-parser');
 var Post = require('../models/posts.js');
+var User = require('../models/users.js');
 var methodOverride = require('method-override');
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(methodOverride("_method"));

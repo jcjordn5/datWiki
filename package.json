@@ -16,6 +16,7 @@
     "express": "^4.13.0",
     "express-ejs-layouts": "^1.1.0",
     "express-session": "^1.11.3",
+    "grunt": "^0.4.5",
     "marked": "^0.3.3",
     "method-override": "^2.3.3",
     "mongoose": "^4.0.6",
@@ -23,6 +24,8 @@
     "mongoose-times": "^0.1.0",
     "mongoose-timestamp": "^0.4.0",
     "morgan": "^1.6.0",
-    "timestamp": "0.0.1"
+    "timestamp": "0.0.1",
+    "tinymce": "^4.2.1",
+    "wysiwyg": "^0.2.0"
   }
 }

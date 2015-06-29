@@ -1,10 +1,10 @@
-<div>
+<div id="article">
 <h1><%= post.title %></h1>
+<h2><%= post.author %></h2>
    <p><%= post.body %></p>
-  <h2>Categories</h2>
-  <% post.categories.forEach(function(item, i) { %>
-  <p><%= post.categories %></p>
-  <% }); %>
+
+  <h2>Category</h2>
+  <p><%= post.category %></p>
   <h3>Last Updated</h3>
   <p><%= post.updatedAt %></p>
   <h3>Created</h3>

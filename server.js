@@ -22,7 +22,6 @@ var express 	= require('express'),
 server.use(methodOverride("_method"));
 server.use(morgan('short'));
 server.use(expressLayouts);
-
 //ROUTES
 var userController = require('./controllers/users.js');
 var postController = require('./controllers/posts.js');

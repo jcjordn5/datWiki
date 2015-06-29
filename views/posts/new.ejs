@@ -3,9 +3,13 @@
   <fieldset>
     <label for= "post-title">Title</label>
     <input type="text" id="post-title" name="post[title]">
-    <input type="textarea" id="post-body" name="post[body]">
+    <textarea id="post-body" name="post[body]" required></textarea>
     <label for= "post-categories">Categories</label>
-    <input type="text" id="post-categories" name="post[categories]">
+    <input type="radio" name="post[category]" value="data">Data
+    <input type="radio" name="post[category]" value="facts">Facts
+    <input type="radio" name="post[category]" value="information">Information
+    <input type="radio" name="post[category]" value="knowledge">Knowlege
+    <input type="radio" name="post[category]" value="wisdom">Wisdom
     <input type="submit" value="Publish">
   </fieldset>
 </form>
