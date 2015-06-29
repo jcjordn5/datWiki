@@ -1,12 +1,18 @@
 
-<form id="article-form" action="/posts/<%=post._id%>/update" method="post">
+<form class="pure-form" id="article-form" action="/posts/<%=post._id%>/update" method="post">
   <fieldset>
     <label for= "post-title">Title</label>
     <input type="text" id="post-title" name="post[title]" value="<%=post.title%>">
     <label for="item-description">Description</label>
     <input type="textarea" id="post-body" name="post[body]" value="<%=post.body%>">
-    <label for= "post-categories">Categories</label>
-    <input type="text" id="post-categories" name="post[categories]" value="<%=post.categories%>">
-    <input type="submit" value="Publish">
+    <label for= "post-categories">Category</label>
+    <select id="category-select" name="post[category]">
+        <option value="data">Data</option>
+        <option value="facts">Facts</option>
+        <option value="information">Information</option>
+        <option value="knowledge">Knowledge</option>
+        <option value="wisdom">Wisdom</option>
+      </select>
+    <input class="buttonDat" type="submit" value="Update">
   </fieldset>
 </form>

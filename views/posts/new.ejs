@@ -1,15 +1,17 @@
 
-<form id="article-form" action="/posts" method="post">
+<form class="pure-form" id="article-form" action="/posts" method="post">
   <fieldset>
     <label for= "post-title">Title</label>
     <input type="text" id="post-title" name="post[title]">
     <textarea id="post-body" name="post[body]" required></textarea>
-    <label for= "post-categories">Categories</label>
-    <input type="radio" name="post[category]" value="data">Data
-    <input type="radio" name="post[category]" value="facts">Facts
-    <input type="radio" name="post[category]" value="information">Information
-    <input type="radio" name="post[category]" value="knowledge">Knowlege
-    <input type="radio" name="post[category]" value="wisdom">Wisdom
-    <input type="submit" value="Publish">
+    <label for= "post-categories">Category</label>
+    <select id="category-select" name="post[category]">
+        <option value="data">Data</option>
+        <option value="facts">Facts</option>
+        <option value="information">Information</option>
+        <option value="knowledge">Knowledge</option>
+        <option value="wisdom">Wisdom</option>
+      </select>
+    <input class="buttonDat" type="submit" value="Publish">
   </fieldset>
 </form>

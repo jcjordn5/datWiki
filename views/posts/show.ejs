@@ -11,8 +11,8 @@
   <p><%= post.createdAt %></p>
 
   <form action="/posts/<%= post._id %>?_method=DELETE" method="post">
-   <input class="button" type="submit" value="Delete item">
+   <input class="buttonDat" type="submit" value="Delete item">
  </form>
- <a class="button nav" href="/posts/<%= post.id %>/edit">Edit</a>
-  <a class="button nav" href="/posts">BACK</a>
+ <a class="buttonDat" class="button nav" href="/posts/<%= post.id %>/edit">Edit</a>
+  <a class="buttonDat" class="button nav" href="/posts">BACK</a>
 </div>
