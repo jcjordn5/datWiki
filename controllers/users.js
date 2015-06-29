@@ -44,11 +44,7 @@ router.post('/login', function (req, res){
 
       req.session.currentUser = user.name;
       console.log('welcome' + req.session.currentUser);
-      res.render('welcome', {
-        sessionName:req.session.currentUser,
-        post:require('../models/posts.js')
-      });
-      }
+      res.redirect(301, '/posts')}
     else{
     res.redirect(301, '/users/login');
   }

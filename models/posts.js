@@ -7,7 +7,7 @@ var postSchema = Schema({
   body:{type:String, require:true},
   author:String,
   category:String,
-  //author:String,
+  author:String,
 
 });
 postSchema.plugin(timestamps);
