@@ -20,6 +20,7 @@ color: #7FFF00;
 .buttonDat {
   color:#7FFF00;
   text-decoration: none;
+  background-color: balck;
 }
 
 .buttonDat:hover {
@@ -47,13 +48,23 @@ textarea{
   margin: 0 auto;
   max-width:500px;
 }
+#post {
+  margin: 0 auto;
+  max-width:500px;
+}
+#delete {
+  background-color: black;
+}
+#delete:hover {
+  background-color:#7FFF00;
+}
 .wikiForm {
   margin: 0 auto;
   max-width:500px
 }
 fieldset{
   top: 50%;
-
+display:inline-flex;
   background-color:#7FFF00;
 }
 
@@ -71,4 +82,13 @@ display:none;
   .buttonDat:hover {
 display:none;
   }
+}
+h1 {
+  text-align: center;
+}
+h2{
+    text-align:center;
+}
+.indexItem {
+  text-align:center;
 }
