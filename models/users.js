@@ -3,8 +3,7 @@ Schema = mongoose.Schema;
 
 var userSchema = Schema({
   name:{type:String, require:true},
-  password:{type:String, require:true},
-  postCount:Number
+  password:{type:String, require:true}
 });
 
 var User = mongoose.model('User', userSchema);

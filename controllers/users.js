@@ -36,11 +36,11 @@ router.post('/login', function (req, res){
     if(user && user.password === loginAtt.password){
 
       req.session.currentUser = user.name;
-      console.log(req.session.currentUser);
-      res.rediect(301, '../posts/index');
+      console.log('welcome' + req.session.currentUser);
+      res.redirect(301, '../posts');
     }
     else
-    res.rediect(301, '/users/login');
+    res.redirect(301, '/users/login');
   })
 })
 
