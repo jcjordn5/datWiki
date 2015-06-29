@@ -27,6 +27,35 @@ color: #7FFF00;
   color:black;
   text-decoration: none;
 }
+textarea{
+  background-color:black;
+}
+#category-select  {
+  background-color:black;
+}
+#post-title  {
+  background-color:black;
+}
+#submit {
+  background-color:black;
+}
+#submit:hover {
+  background-color:#7FFF00;
+}
+
+#article {
+  margin: 0 auto;
+  max-width:500px;
+}
+.wikiForm {
+  margin: 0 auto;
+  max-width:500px
+}
+fieldset{
+  top: 50%;
+
+  background-color:#7FFF00;
+}
 
 @media print {
   body {
