@@ -26,7 +26,5 @@
     "mongoose-timestamp": "^0.4.0",
     "morgan": "^1.6.0",
     "timestamp": "0.0.1",
-    "tinymce": "^4.2.1",
-    "wysiwyg": "^0.2.0"
   }
 }

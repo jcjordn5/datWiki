@@ -79,11 +79,11 @@ router.post('/:id/update', function (req, res) {
     title: postToUpdate.title,
     body: postToUpdate.body,
     author: postToUpdate.author,
-    categories: postToUpdate.categories,
+    category: postToUpdate.category,
     updatedAt:Date.now()},
     {multi: false}, function (err, result) {
       console.log(result);
-      res.redirect(301, "/:id");
+      res.redirect(301, "../");
   });
 });
 

@@ -154,8 +154,10 @@ margin: 0 auto;
   text-align:center;
 }
 
-#wrapper {
-
+.wrapper {
+width:158px;
+margin-left:auto;
+margin-right:auto;
 
 }
 @media print {
