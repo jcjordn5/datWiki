@@ -24,6 +24,7 @@ color: #7FFF00;
   text-decoration: none;
   background-color: balck;
   transition: all .1s ease;
+  padding:4px;
 }
 
 .buttonDat:hover {
