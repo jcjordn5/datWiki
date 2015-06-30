@@ -9,6 +9,8 @@ text-shadow:
   font-family: 'Press Start 2P', cursive;
   background-color:#7FFF00;
   color:white;
+  padding:10px;
+  margin-top:0px;
 }
 
 body {
@@ -63,6 +65,18 @@ margin-top:5px;
 #delete:hover {
   background-color:#7FFF00;
 }
+#login{
+  margin-top:5px;
+  background-color: black;
+}
+#login:hover {
+  color:black;
+  background-color:#7FFF00;
+}
+.post-author{
+  margin-bottom:10px;
+  background-color:black;
+}
 .wikiForm {
   margin: 0 auto;
   max-width:500px
@@ -84,6 +98,17 @@ fieldset label {
   font-family: sans-serif;
   color: black;
   }
+  #title {
+  text-shadow:
+     6px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    text-align:center;
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color:white;
+  }
 
   .buttonDat {
 display:none;
@@ -94,11 +119,30 @@ display:none;
   }
 }
 h1 {
-  text-align: center;
+  text-align:center;
 }
 h2{
     text-align:center;
 }
+nav {
+  text-align:center;
+}
+nav a{
+  padding:10px;
+  font-size:36px;
+  display:block;
+  cursor:pointer;
+}
 .indexItem {
   text-align:center;
+}
+.black{
+  background-color: black;
+}
+.container {
+margin: 0 auto;
+}
+
+.wrapper {
+
 }

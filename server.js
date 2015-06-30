@@ -33,9 +33,9 @@ server.get('/', function (req, res){
 
 //CATCHALL ROUTES
 
-/*server.use(function (req,res) {
-  res.send("Welcome to the 404")
-});*/
+server.use(function (req,res) {
+  res.send("Welcome to the 404");
+});
 
 mongoose.connect(url);
 var db = mongoose.connection;

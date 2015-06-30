@@ -1,9 +1,12 @@
-<form id="article-form" action="/users/login" method="post">
-  <fieldset>
-    <label for= "item-name">User Name</label>
-    <input type="text" id="post-title" name="user[name]">
-    <label for="item-description">Password</label>
-    <input type="textarea" id="post-body" name="user[password]">
-    <input type="submit" value="Login">
-  </fieldset>
-</form>
+<h1>LOG IN</h1>
+<div class="wrapper">
+  <form class="article-form" action="/users/login" method="post">
+    <fieldset>
+      <label>User Name</label>
+      <input class="black" type="text" class="user-name" name="user[name]">
+      <label>Password</label>
+      <input class="black" type="text" class="user-password" name="user[password]">
+      <input type="submit" id="login" value="Login">
+    </fieldset>
+  </form>
+</div>
