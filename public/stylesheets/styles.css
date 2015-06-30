@@ -13,19 +13,18 @@ text-shadow:
   padding:10px;
   margin-top:0px;
 }
-
 body {
 background-color: black;
 font-family: 'VT323';
 color: #7FFF00;
 }
-pre {
-  color:white;
+
+.accordion{
+  transition: all 1s ease;
 }
 .accordion input {
   display: none;
 }
-
 .cat {
   background-color: #7FFF00;
   color:black;
@@ -46,11 +45,12 @@ display:none;
   background: black;
   color: #333;
 }
-
+.deEmph {
+  font-size:20px;
+}
 .buttonDat {
   color:#7FFF00;
   text-decoration: none;
-  background-color: balck;
   transition: all .1s ease;
   padding:4px;
   font-size:36px;
@@ -67,8 +67,8 @@ display:none;
   text-decoration: none;
   background-color: balck;
   transition: all .1s ease;
-  padding:4px;
-  font-size:20px;
+  padding:0px;
+  font-size:30px;
   max-width: 100px;
 }
 
@@ -102,6 +102,9 @@ select{
 margin-top:5px;
 transition: all .05s ease;
 }
+#timeWrap {
+  text-align:center;
+}
 #submit:hover {
   background-color:#7FFF00;
   color:black;
@@ -122,7 +125,7 @@ transition: all .05s ease;
 }
 #article {
   margin: 0 auto;
-  max-width:500px;
+  max-width:450px;
 }
 #post {
   margin: 0 auto;
@@ -131,6 +134,7 @@ transition: all .05s ease;
 }
 #create {
   font-size:20px;
+  margin-top: 30px;
 }
 #delete {
   color:#FE0001;
@@ -199,14 +203,15 @@ nav a{
   background-color: black;
 }
 
-
 #postBody{
   font-size:20px;
+  color:white;
 }
 #postCat {
-  font-size:18px;
+  font-size:24px;
   text-align:center;
 }
+
 .wrapper {
 width:158px;
 margin-left:auto;

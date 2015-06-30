@@ -4,6 +4,7 @@ var mongoose = require('mongoose');
     bodyParser 	= require('body-parser'),
     User = require('../models/users.js'),
     Post = require('../models/posts.js').author,
+    bcrypt = require('bcrypt'),
     methodOverride = require('method-override');
 
 router.use(bodyParser.urlencoded({ extended: true }));

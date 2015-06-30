@@ -7,12 +7,7 @@
   <div class ="container">
 <%post.forEach(function(post, j) { %>
 <%if (post.category === "data"){%>
-<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %>
- <% if (post.createdAt === post.updatedAt){ %>
-  <%= NEW %>
-  <% } else {%>
-  <%=post.updatedAt%>
-  <%}%></p></a>
+<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
 <% }}); %>
 </div>
 
@@ -21,12 +16,7 @@
 <div class ="container">
 <%post.forEach(function(post, j) { %>
 <%if (post.category === "information"){%>
-<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %>
- <% if (post.createdAt === post.updatedAt){ %>
-  <%= NEW %>
-  <% } else {%>
-  <%=post.updatedAt%>
-  <%}%></p></a>
+<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
 <% }}); %>
 </div>
 
@@ -35,12 +25,7 @@
 <div class ="container">
 <%post.forEach(function(post, j) { %>
 <%if (post.category === "facts"){%>
-<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %>
- <% if (post.createdAt === post.updatedAt){ %>
-  <%= NEW %>
-  <% } else {%>
-  <%=post.updatedAt%>
-  <%}%></p></a>
+<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
 <% }}); %>
 </div>
 
@@ -49,12 +34,7 @@
 <div class ="container">
 <%post.forEach(function(post, j) { %>
 <%if (post.category === "knowledge"){%>
-<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %>
- <% if (post.createdAt === post.updatedAt){ %>
-  <%= NEW %>
-  <% } else {%>
-  <%=post.updatedAt%>
-  <%}%></p></a>
+<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
 <% }}); %>
 </div>
 
@@ -64,12 +44,7 @@
 <div class ="container">
 <%post.forEach(function(post, j) { %>
 <%if (post.category === "wisdom"){%>
-<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %>
- <% if (post.createdAt === post.updatedAt){ %>
-  <%= NEW %>
-  <% } else {%>
-  <%=post.updatedAt%>
-  <%}%></p></a>
+<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
 <% }}); %>
 </div>
 

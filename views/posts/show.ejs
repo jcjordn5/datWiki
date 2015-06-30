@@ -7,10 +7,12 @@
 
   <h2>Category</h2>
   <p id="postCat"><%= post.category %></p>
+  <div id="timeWrap">
   <h3>Last Updated</h3>
-  <p><%= post.updatedAt %></p>
-  <h3>Created</h3>
-  <p><%= post.createdAt %></p>
+    <p><%= post.updatedAt %></p>
+    <h3>Created</h3>
+    <p><%= post.createdAt %></p>
+  </div>
 <nav id="foot">
 <form action="/posts/<%= post._id %>?_method=DELETE" method="post">
    <input class="buttonDat" id="delete" type="submit" value="DELETE">
