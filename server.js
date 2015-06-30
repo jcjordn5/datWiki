@@ -6,8 +6,8 @@ var express 	= require('express'),
   mongoose = require('mongoose'),
   session = require('express-session'),
   methodOverride = require('method-override'),
+	marked = require('marked'),
   morgan = require('morgan');
-	
   server.set('views', './views');
 	server.set('view engine', 'ejs');
 	server.use(express.static("./public"));
