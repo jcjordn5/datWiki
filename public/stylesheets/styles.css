@@ -54,8 +54,22 @@ select{
 #submit {
   background-color:black;
 margin-top:5px;
+ransition: all .1s ease;
 }
 #submit:hover {
+  background-color:#7FFF00;
+  color:black;
+}
+#cancel {
+  text-align: center;
+  width:52px;
+  padding:3px;
+  text-decoration: none;
+  color:#7FFF00;
+  background-color:black;
+margin-top:5px;
+}
+#cancel:hover {
   background-color:#7FFF00;
   color:black;
 }
