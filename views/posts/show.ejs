@@ -1,7 +1,9 @@
 <div id="article">
 <h1><%= post.title %></h1>
 <h2>Authored by:<%=post.author%></h2>
-   <p id="postBody"><%= post.body %></p>
+   <div id="postBody" class="body">
+    <%- post.body %>
+   </div>
 
   <h2>Category</h2>
   <p id="postCat"><%= post.category %></p>

@@ -8,6 +8,7 @@ var express 	= require('express'),
   methodOverride = require('method-override'),
 	marked = require('marked'),
   morgan = require('morgan');
+
   server.set('views', './views');
 	server.set('view engine', 'ejs');
 	server.use(express.static("./public"));

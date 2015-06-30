@@ -5,6 +5,8 @@ var bodyParser 	= require('body-parser');
 var Post = require('../models/posts.js');
 var User = require('../models/users.js');
 var methodOverride = require('method-override');
+var marked = require('marked');
+
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(methodOverride("_method"));
 //INDEX
@@ -45,6 +47,8 @@ router.get('/:id', function (req, res) {
    if (err) {
      console.log("Error in /posts/" + postId);
    } else {
+     post.body = marked(post.body);
+
      res.render('posts/show', {post: post});
    }
  });

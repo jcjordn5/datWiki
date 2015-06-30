@@ -55,7 +55,7 @@ select{
 #submit {
   background-color:black;
 margin-top:5px;
-ransition: all .1s ease;
+ransition: all .05s ease;
 }
 #submit:hover {
   background-color:#7FFF00;
