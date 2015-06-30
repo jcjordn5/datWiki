@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Press+Start+2P|VT323);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P|VT323);
 #title {
 text-shadow:
    6px -1px 0 #000,
@@ -149,7 +149,8 @@ margin: 0 auto;
   font-size:18px;
   text-align:center;
 }
-.wrapper {
+#wrapper {
+
 
 }
 @media print {
