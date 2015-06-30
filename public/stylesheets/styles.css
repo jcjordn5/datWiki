@@ -81,6 +81,10 @@ margin-top:5px;
 #post {
   margin: 0 auto;
   max-width:500px;
+  text-align:center;
+}
+#create {
+  font-size:20px;
 }
 #delete {
   background-color: black;
@@ -149,6 +153,7 @@ margin: 0 auto;
   font-size:18px;
   text-align:center;
 }
+
 #wrapper {
 
 
