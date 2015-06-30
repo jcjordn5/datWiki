@@ -1,7 +1,9 @@
 <div class="accordion">
   <div id="post">
   <h1>INDEX OF ARTICLES BY CATEGORY</h1>
-  <h2>DATA</h2>
+
+  <input type="checkbox" name="container" id="container1" value="1">
+  <label for="container1" class="cat">DATA</label>
   <div class ="container">
 <%post.forEach(function(post, j) { %>
 <%if (post.category === "data"){%>
@@ -13,7 +15,9 @@
   <%}%></p></a>
 <% }}); %>
 </div>
-<h2>INFORMATION</h2>
+
+<input type="checkbox" name="container" id="container2" value="2">
+<label for="container2" class="cat">INFORMATION</label>
 <div class ="container">
 <%post.forEach(function(post, j) { %>
 <%if (post.category === "information"){%>
@@ -25,7 +29,9 @@
   <%}%></p></a>
 <% }}); %>
 </div>
-<h2>FACTS</h2>
+
+<input type="checkbox" name="container" id="container3" value="3">
+<label for="container3" class="cat">FACTS</label>
 <div class ="container">
 <%post.forEach(function(post, j) { %>
 <%if (post.category === "facts"){%>
@@ -37,7 +43,9 @@
   <%}%></p></a>
 <% }}); %>
 </div>
-<h2>KNOWLEDGE</h2>
+
+<input type="checkbox" name="container" id="container4" value="4">
+<label for="container4" class="cat">KNOWLEDGE</label>
 <div class ="container">
 <%post.forEach(function(post, j) { %>
 <%if (post.category === "knowledge"){%>
@@ -49,7 +57,10 @@
   <%}%></p></a>
 <% }}); %>
 </div>
-<h2>WISDOM</h2>
+
+
+<input type="checkbox" name="container" id="container5" value="5">
+<label for="container5" class="cat">WISDOM</label>
 <div class ="container">
 <%post.forEach(function(post, j) { %>
 <%if (post.category === "wisdom"){%>
@@ -61,6 +72,10 @@
   <%}%></p></a>
 <% }}); %>
 </div>
+
     <a class="buttonDat" id="create" href="/posts/new">Create New Article</a>
   </div>
 </div>
+<script>
+  $('.cat').on('click', function () {$('.sekret').remove()});
+</script>

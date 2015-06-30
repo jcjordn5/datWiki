@@ -22,11 +22,31 @@ color: #7FFF00;
 pre {
   color:white;
 }
+.accordion input {
+  display: none;
+}
 
 .cat {
   background-color: #7FFF00;
   color:black;
+  cursor:pointer;
+  display:block;
+  font-size:48px;
+  border: 5px solid black;
 }
+.container {
+margin: 0 auto;
+display:none;
+}
+.accordion input:checked + label + .container {
+  display: block;
+  overflow: auto;
+  height: auto;
+  opacity: 1;
+  background: black;
+  color: #333;
+}
+
 .buttonDat {
   color:#7FFF00;
   text-decoration: none;
@@ -178,13 +198,8 @@ nav a{
 .black{
   background-color: black;
 }
-.accordion {
-  overflow: hidden;
-  margin: auto;
-}
-.container {
-margin: 0 auto;
-}
+
+
 #postBody{
   font-size:20px;
 }
