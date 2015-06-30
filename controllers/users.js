@@ -1,10 +1,10 @@
 var mongoose = require('mongoose');
-var express = require('express');
-var router = express.Router();
-var bodyParser 	= require('body-parser');
-var User = require('../models/users.js');
-var Post = require('../models/posts.js').author;
-var methodOverride = require('method-override');
+    express = require('express'),
+    router = express.Router(),
+    bodyParser 	= require('body-parser'),
+    User = require('../models/users.js'),
+    Post = require('../models/posts.js').author,
+    methodOverride = require('method-override');
 
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(methodOverride("_method"));

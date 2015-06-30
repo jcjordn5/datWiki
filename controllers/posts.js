@@ -1,11 +1,11 @@
-var mongoose = require('mongoose');
-var express = require('express');
-var router = express.Router();
-var bodyParser 	= require('body-parser');
-var Post = require('../models/posts.js');
-var User = require('../models/users.js');
-var methodOverride = require('method-override');
-var marked = require('marked');
+var mongoose = require('mongoose'),
+    express = require('express'),
+    router = express.Router(),
+    bodyParser 	= require('body-parser'),
+    Post = require('../models/posts.js'),
+    User = require('../models/users.js'),
+    methodOverride = require('method-override'),
+    marked = require('marked');
 
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(methodOverride("_method"));
@@ -83,7 +83,7 @@ router.post('/:id/update', function (req, res) {
     updatedAt:Date.now()},
     {multi: false}, function (err, result) {
       console.log(result);
-      res.redirect(301, "/posts");
+      res.redirect(301, "/:id");
   });
 });
 
