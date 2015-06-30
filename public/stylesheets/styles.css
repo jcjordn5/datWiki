@@ -23,6 +23,7 @@ color: #7FFF00;
   color:#7FFF00;
   text-decoration: none;
   background-color: balck;
+  transition: all .1s ease;
 }
 
 .buttonDat:hover {
@@ -35,6 +36,13 @@ textarea{
   padding: 5px;
   width:500px;
   height:250px;
+  border:none;
+}
+input {
+  border:none;
+}
+select{
+  border:none;
 }
 #category-select  {
   background-color:black;
@@ -49,8 +57,8 @@ margin-top:5px;
 }
 #submit:hover {
   background-color:#7FFF00;
+  color:black;
 }
-
 #article {
   margin: 0 auto;
   max-width:500px;
@@ -61,6 +69,7 @@ margin-top:5px;
 }
 #delete {
   background-color: black;
+  border:none;
 }
 #delete:hover {
   background-color:#7FFF00;
@@ -68,6 +77,7 @@ margin-top:5px;
 #login{
   margin-top:5px;
   background-color: black;
+  border:none;
 }
 #login:hover {
   color:black;
@@ -85,6 +95,7 @@ fieldset{
   top: 50%;
 display:inline-flex;
   background-color:#7FFF00;
+  border:none;
 }
 
 fieldset label {
@@ -92,6 +103,40 @@ fieldset label {
   padding:3px;
 }
 
+h1 {
+  text-align:center;
+}
+h2{
+    text-align:center;
+}
+nav {
+  text-align:center;
+}
+nav a{
+  padding:10px;
+  font-size:36px;
+  display:block;
+  cursor:pointer;
+}
+.indexItem {
+  text-align:center;
+}
+.black{
+  background-color: black;
+}
+.container {
+margin: 0 auto;
+}
+#postBody{
+  font-size:20px;
+}
+#postCat {
+  font-size:18px;
+  text-align:center;
+}
+.wrapper {
+
+}
 @media print {
   body {
   background-color: white;
@@ -117,32 +162,4 @@ display:none;
   .buttonDat:hover {
 display:none;
   }
-}
-h1 {
-  text-align:center;
-}
-h2{
-    text-align:center;
-}
-nav {
-  text-align:center;
-}
-nav a{
-  padding:10px;
-  font-size:36px;
-  display:block;
-  cursor:pointer;
-}
-.indexItem {
-  text-align:center;
-}
-.black{
-  background-color: black;
-}
-.container {
-margin: 0 auto;
-}
-
-.wrapper {
-
 }
