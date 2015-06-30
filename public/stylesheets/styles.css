@@ -176,6 +176,10 @@ nav a{
 .black{
   background-color: black;
 }
+.accordion {
+  overflow: hidden;
+  margin: auto;
+}
 .container {
 margin: 0 auto;
 }
