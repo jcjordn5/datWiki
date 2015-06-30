@@ -5,7 +5,6 @@ var mongoose = require('mongoose'),
     Post = require('../models/posts.js'),
     User = require('../models/users.js'),
     methodOverride = require('method-override'),
-    $ = require('jQuery'),
     marked = require('marked');
 
 router.use(bodyParser.urlencoded({ extended: true }));

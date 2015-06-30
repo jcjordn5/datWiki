@@ -20,11 +20,13 @@ font-family: 'VT323';
 color: #7FFF00;
 }
 pre {
-  font-family:'Share Tech Mono', ;
   color:white;
 }
 
-
+.cat {
+  background-color: #7FFF00;
+  color:black;
+}
 .buttonDat {
   color:#7FFF00;
   text-decoration: none;
