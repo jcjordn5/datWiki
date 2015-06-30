@@ -74,6 +74,7 @@ router.post('/:id/update', function (req, res) {
   Post.update({_id: postId}, {
     title: postToUpdate.title,
     body: postToUpdate.body,
+    author: postToUpdate.author,
     categories: postToUpdate.categories,
     updatedAt:Date.now()},
     {multi: false}, function (err, result) {
