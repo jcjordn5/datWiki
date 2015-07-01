@@ -7,8 +7,9 @@
     <label for "post-author">Author</label>
     <input type="text" class="post-author" name="post[author]" value="<%=post.author%>">
     <textarea id="post-body" name="post[body]" required><%=post.body%></textarea>
+    <h3 id ="warning">IMPORTANT PLEASE DESIGNATE CATEGORY</h3>
     <label for= "post-categories">Category</label>
-    <select id="category-select" name="post[category]">
+    <select id="category-select" name="post[category]"value="<%=post.category%>">
         <option value="data">Data</option>
         <option value="facts">Facts</option>
         <option value="information">Information</option>

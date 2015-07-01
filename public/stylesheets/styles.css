@@ -228,7 +228,9 @@ nav a{
   font-size:24px;
   text-align:center;
 }
-
+#warning{
+  color:red;
+}
 .wrapper {
 width:158px;
 margin-left:auto;
