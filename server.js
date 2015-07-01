@@ -7,10 +7,12 @@ var express 	= require('express'),
   session = require('express-session'),
   methodOverride = require('method-override'),
 	marked = require('marked'),
+	serveFavicon = require('serve-favicon')
   morgan = require('morgan');
 
   server.set('views', './views');
 	server.set('view engine', 'ejs');
+	server.use(serveFavicon(__dirname + '/public/images/favicon.ico')); 
 	server.use(express.static("./public"));
 	server.use(bodyParser.urlencoded({
 	  extended: true

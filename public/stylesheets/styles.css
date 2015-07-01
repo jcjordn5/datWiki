@@ -25,9 +25,6 @@ color: #7FFF00;
 pre {
   font-size:18px;
 }
-.accordion{
-  transition: all 1s ease;
-}
 .accordion input {
   display: none;
 }
@@ -39,10 +36,12 @@ pre {
   font-size:48px;
   border: 5px solid black;
 }
-.container {
+.accordion .container {
 margin: 0 auto;
 display:none;
+transition: all 1s ease;
 }
+
 .accordion input:checked + label + .container {
   display: block;
   overflow: auto;
