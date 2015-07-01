@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P|VT323);
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
-#title {
+
+#title{
 text-shadow:
    6px -1px 0 #000,
     1px -1px 0 #000,
@@ -11,14 +12,20 @@ text-shadow:
   background-color:#7FFF00;
   color:white;
   padding:10px;
+  height:10%;
   margin-top:0px;
+  display:block;
 }
+
 body {
 background-color: black;
 font-family: 'VT323';
 color: #7FFF00;
 }
-
+pre {
+  font-size:18px;
+  margin-left: 25%;
+}
 .accordion{
   transition: all 1s ease;
 }
@@ -40,11 +47,23 @@ display:none;
 .accordion input:checked + label + .container {
   display: block;
   overflow: auto;
-  height: auto;
+  height: 200px;
   opacity: 1;
   background: black;
   color: #333;
 }
+
+.accordion ::-webkit-scrollbar {
+  width: 3px;
+  height: 10px;
+  background-color: black;
+}
+
+.accordion ::-webkit-scrollbar-thumb {
+  background: #7FFF00;
+  cursor: pointer;
+}
+
 .deEmph {
   font-size:20px;
 }

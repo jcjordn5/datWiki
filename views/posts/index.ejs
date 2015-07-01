@@ -1,54 +1,53 @@
 <div class="accordion">
   <div id="post">
-  <h1>INDEX OF ARTICLES BY CATEGORY</h1>
+    <h1>INDEX OF ARTICLES BY CATEGORY</h1>
 
-  <input type="checkbox" name="container" id="container1" value="1">
-  <label for="container1" class="cat">DATA</label>
-  <div class ="container">
-<%post.forEach(function(post, j) { %>
-<%if (post.category === "data"){%>
-<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
-<% }}); %>
-</div>
+    <input type="checkbox" name="container" id="container1" value="1">
+    <label for="container1" class="cat">DATA</label>
+    <div class ="container">
+      <%post.forEach(function(post, j) { %>
+      <%if (post.category === "data"){%>
+      <p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
+      <% }}); %>
+      </div>
 
-<input type="checkbox" name="container" id="container2" value="2">
-<label for="container2" class="cat">INFORMATION</label>
-<div class ="container">
-<%post.forEach(function(post, j) { %>
-<%if (post.category === "information"){%>
-<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
-<% }}); %>
-</div>
+      <input type="checkbox" name="container" id="container2" value="2">
+      <label for="container2" class="cat">INFORMATION</label>
+      <div class ="container">
+      <%post.forEach(function(post, j) { %>
+      <%if (post.category === "information"){%>
+      <p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
+      <% }}); %>
+      </div>
 
-<input type="checkbox" name="container" id="container3" value="3">
-<label for="container3" class="cat">FACTS</label>
-<div class ="container">
-<%post.forEach(function(post, j) { %>
-<%if (post.category === "facts"){%>
-<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
-<% }}); %>
-</div>
+      <input type="checkbox" name="container" id="container3" value="3">
+      <label for="container3" class="cat">FACTS</label>
+      <div class ="container">
+      <%post.forEach(function(post, j) { %>
+      <%if (post.category === "facts"){%>
+      <p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
+      <% }}); %>
+      </div>
 
-<input type="checkbox" name="container" id="container4" value="4">
-<label for="container4" class="cat">KNOWLEDGE</label>
-<div class ="container">
-<%post.forEach(function(post, j) { %>
-<%if (post.category === "knowledge"){%>
-<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
-<% }}); %>
-</div>
+      <input type="checkbox" name="container" id="container4" value="4">
+      <label for="container4" class="cat">KNOWLEDGE</label>
+      <div class ="container">
+      <%post.forEach(function(post, j) { %>
+      <%if (post.category === "knowledge"){%>
+      <p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
+      <% }}); %>
+      </div>
 
 
-<input type="checkbox" name="container" id="container5" value="5">
-<label for="container5" class="cat">WISDOM</label>
-<div class ="container">
-<%post.forEach(function(post, j) { %>
-<%if (post.category === "wisdom"){%>
-<p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
-<% }}); %>
-</div>
-
-    <a class="buttonDat" id="create" href="/posts/new">Create New Article</a>
+      <input type="checkbox" name="container" id="container5" value="5">
+      <label for="container5" class="cat">WISDOM</label>
+      <div class ="container">
+      <%post.forEach(function(post, j) { %>
+      <%if (post.category === "wisdom"){%>
+      <p class="indexItem"><a class="postLink" href="/posts/<%=post._id%>"><%= post.title %><br><span class="deEmph"><%=post.updatedAt%></span></p></a>
+      <% }}); %>
+      </div>
+      <a class="buttonDat" id="create" href="/posts/new">Create New Article</a>
   </div>
 </div>
 <script>
